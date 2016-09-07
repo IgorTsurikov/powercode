@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<textarea class="form-control" rows="3" name="projectdescription" placeholder="введите описание" required="required"><?php echo $query->description; ?></textarea>
 	    </td>
 	    <td>
-		<input type="date" class="form-control" maxlength="20" name="datepicker" id="datepicker" value="<?php echo $query->deadline; ?>" placeholder="укажите дату" required="required">
+		<input type="date" class="form-control" maxlength="20" name="datepicker" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}" id="datepicker" value="<?php echo $query->deadline; ?>" placeholder="укажите дату в формате дд.мм.гггг" required="required">
 	    </td>
 	</tr>
     </tbody>

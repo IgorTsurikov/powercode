@@ -45,7 +45,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="form-group">
 		    <label class="control-label" for="datepicker">Дедлайн</label>
-		    <input type="date" class="form-control" maxlength="20" name="datepicker" id="datepicker" placeholder="укажите дату" required="required">
+		    <br>введите дату в формате дд.мм.гггг:
+		    <input type="date" class="form-control" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}" maxlength="20" name="datepicker" id="datepicker" placeholder="укажите дату" required="required">
 		</div>
 		<div class="form-group">
 		    <input type="submit" class="btn btn-primary" value="Добавить">
@@ -55,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 	<div id="addother" class="hidden">
 	    <p class="bg-success text-center" style="padding: 10px;">Проект добавлен</p>
-	    <button type="button" class="btn btn btn-primary" id="addotherbutton">Добавить ещё проект</button
+	    <button type="button" class="btn btn btn-primary" id="addotherbutton">Добавить ещё проект</button>
 	</div>
     </div>
     <div class="col-md-2"></div>
